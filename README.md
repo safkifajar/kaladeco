@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kaladeco.id — Company Profile Website
 
-## Getting Started
+Website company profile untuk **Kaladeco.id**, penyedia jasa dekorasi lamaran, prewedding, tasyakuran, dan maternity shoot di Purwokerto dan sekitarnya.
 
-First, run the development server:
+> _"Mendekor dengan hati, semoga sampai ke hati."_
 
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **Lucide React** — icon library
+- **Google Fonts** — Inter & Playfair Display
+
+## Fitur
+
+- Landing page responsive (mobile & desktop)
+- Section: Hero, Tentang, Layanan, Portfolio, Harga, Testimoni, Kontak
+- Portfolio gallery dengan filter kategori
+- Paket harga dengan add-on (MUA, Flower Girl) & pilihan warna bunga
+- Floating WhatsApp button
+- SEO optimized (metadata, Open Graph, JSON-LD structured data)
+- Sitemap & robots.txt otomatis
+- Scroll reveal animations
+
+## Menjalankan Project
+
+### Prasyarat
+- Node.js 18.17 atau lebih baru
+- npm / yarn / pnpm
+
+### Install dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development mode
+```bash
+npm run dev
+```
+Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production build
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Lint
+```bash
+npm run lint
+```
 
-## Learn More
+## Struktur Project
 
-To learn more about Next.js, take a look at the following resources:
+```
+kaladeco/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx         # Root layout + SEO metadata
+│   │   ├── page.tsx           # Homepage
+│   │   ├── globals.css        # Global styles & Tailwind config
+│   │   ├── icon.svg           # Favicon
+│   │   ├── sitemap.ts         # Sitemap generator
+│   │   └── robots.ts          # Robots.txt generator
+│   └── components/
+│       ├── Navbar.tsx
+│       ├── Footer.tsx
+│       ├── HeroSection.tsx
+│       ├── AboutSection.tsx
+│       ├── ServicesSection.tsx
+│       ├── PortfolioSection.tsx
+│       ├── PricelistSection.tsx
+│       ├── TestimonialSection.tsx
+│       ├── ContactSection.tsx
+│       ├── WhatsAppFloat.tsx
+│       ├── Reveal.tsx
+│       └── icons/
+│           └── InstagramIcon.tsx
+├── public/                    # Static assets
+└── package.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Kontak Bisnis
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **WhatsApp**: [+62 852-8391-0033](https://wa.me/6285283910033)
+- **Email**: kaladeco.id@gmail.com
+- **Instagram**: [@kaladeco.id](https://instagram.com/kaladeco.id)
+- **Area Layanan**: Purwokerto & sekitarnya
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy termudah via [Vercel](https://vercel.com/new):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push repo ke GitHub
+2. Import project di Vercel
+3. Deploy — otomatis live dalam ±2 menit
+
+## Lisensi
+
+© 2025 Kaladeco.id — All rights reserved.
