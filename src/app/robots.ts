@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://kaladeco.id/sitemap.xml",
+    sitemap: "https://kaladeco.web.id/sitemap.xml",
   };
 }

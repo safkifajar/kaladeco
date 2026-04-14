@@ -5,12 +5,13 @@ import Link from "next/link";
 import { Menu, X, MessageCircle } from "lucide-react";
 
 const navLinks = [
-  { href: "#beranda", label: "Beranda" },
-  { href: "#tentang", label: "Tentang" },
-  { href: "#layanan", label: "Layanan" },
-  { href: "#portfolio", label: "Portfolio" },
-  { href: "#harga", label: "Harga" },
-  { href: "#kontak", label: "Kontak" },
+  { href: "/#beranda", label: "Beranda" },
+  { href: "/#tentang", label: "Tentang" },
+  { href: "/#layanan", label: "Layanan" },
+  { href: "/#portfolio", label: "Portfolio" },
+  { href: "/#harga", label: "Harga" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#kontak", label: "Kontak" },
 ];
 
 export default function Navbar() {

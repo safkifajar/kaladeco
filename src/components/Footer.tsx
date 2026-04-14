@@ -28,11 +28,12 @@ export default function Footer() {
               Menu
             </h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#beranda" className="text-white/70 hover:text-primary-light transition-colors">Beranda</a></li>
-              <li><a href="#tentang" className="text-white/70 hover:text-primary-light transition-colors">Tentang</a></li>
-              <li><a href="#layanan" className="text-white/70 hover:text-primary-light transition-colors">Layanan</a></li>
-              <li><a href="#portfolio" className="text-white/70 hover:text-primary-light transition-colors">Portfolio</a></li>
-              <li><a href="#harga" className="text-white/70 hover:text-primary-light transition-colors">Harga</a></li>
+              <li><a href="/#beranda" className="text-white/70 hover:text-primary-light transition-colors">Beranda</a></li>
+              <li><a href="/#tentang" className="text-white/70 hover:text-primary-light transition-colors">Tentang</a></li>
+              <li><a href="/#layanan" className="text-white/70 hover:text-primary-light transition-colors">Layanan</a></li>
+              <li><a href="/#portfolio" className="text-white/70 hover:text-primary-light transition-colors">Portfolio</a></li>
+              <li><a href="/#harga" className="text-white/70 hover:text-primary-light transition-colors">Harga</a></li>
+              <li><a href="/blog" className="text-white/70 hover:text-primary-light transition-colors">Blog</a></li>
             </ul>
           </div>
 
