@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Kaladeco.id - Jasa Dekorasi Profesional Purwokerto",
     description:
       "Mendekor dengan hati, semoga sampai ke hati. Jasa dekorasi lamaran, prewedding, tasyakuran, dan maternity shoot di Purwokerto.",
-    url: "https://kaladeco.id",
+    url: "https://kaladeco.vercel.app",
     siteName: "Kaladeco.id",
     locale: "id_ID",
     type: "website",
@@ -80,7 +80,7 @@ export default function RootLayout({
               name: "Kaladeco.id",
               description:
                 "Mendekor dengan hati, semoga sampai ke hati. Penyedia jasa dekorasi lamaran, prewedding, tasyakuran, dan maternity shoot untuk wilayah Purwokerto dan sekitarnya.",
-              url: "https://kaladeco.id",
+              url: "https://kaladeco.vercel.app",
               telephone: "+6285283910033",
               email: "kaladeco.id@gmail.com",
               address: {
