@@ -19,6 +19,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kaladeco.vercel.app"),
+  applicationName: "Kaladeco.id",
   title: {
     default: "Kaladeco.id - Jasa Dekorasi Lamaran, Prewedding & Maternity Purwokerto",
     template: "%s | Kaladeco.id",
@@ -77,13 +79,38 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
+              "@type": "WebSite",
               name: "Kaladeco.id",
+              alternateName: "Kaladeco",
+              url: "https://kaladeco.vercel.app",
+              inLanguage: "id-ID",
+              publisher: {
+                "@type": "Organization",
+                name: "Kaladeco.id",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://kaladeco.vercel.app/icon.svg",
+                },
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://kaladeco.vercel.app/#business",
+              name: "Kaladeco.id",
+              alternateName: "Kaladeco",
               description:
                 "Mendekor dengan hati, semoga sampai ke hati. Penyedia jasa dekorasi lamaran, prewedding, tasyakuran, dan maternity shoot untuk wilayah Purwokerto dan sekitarnya.",
               url: "https://kaladeco.vercel.app",
               telephone: "+6285283910033",
               email: "kaladeco.id@gmail.com",
+              image: "https://kaladeco.vercel.app/icon.svg",
+              logo: "https://kaladeco.vercel.app/icon.svg",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Purwokerto",
