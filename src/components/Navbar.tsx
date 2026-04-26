@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/#portfolio", label: "Portfolio" },
   { href: "/#harga", label: "Harga" },
   { href: "/blog", label: "Blog" },
+  { href: "https://kaladeco-font.vercel.app", label: "Font Generator", external: true },
   { href: "/#kontak", label: "Kontak" },
 ];
 
@@ -48,6 +49,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="relative px-4 py-2 text-sm font-medium text-charcoal/80 hover:text-primary transition-colors group"
               >
                 {link.label}
@@ -82,6 +84,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 onClick={() => setIsOpen(false)}
                 className="block text-base font-medium text-charcoal hover:text-primary py-3 border-b border-gray-100"
               >
